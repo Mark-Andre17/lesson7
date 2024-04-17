@@ -24,9 +24,9 @@ let getUsers = fetch('https://jsonplaceholder.typicode.com/users')
                 userEmail.classList = 'user-email';
                 userCity.classList = 'user-city';
                 closeButton.innerHTML = '&times;';
-                userName.innerHTML = `${element.name}`;
-                userEmail.innerHTML = `${element.email}`;
-                userCity.innerHTML = `${element.address.city}`;
+                userName.innerHTML = `Имя: ${element.name}`;
+                userEmail.innerHTML = `Почта: ${element.email}`;
+                userCity.innerHTML = `Город: ${element.address.city}`;
                 userEmail.href = `mailto:${element.email}`
                 container.append(userDiv);
                 userDiv.append(userDivBtn,userEmail,userCity);
